@@ -6,7 +6,7 @@ Link: https://www.meetup.com/coldfusionmeetup/events/273813364/
 
 Recording: Will be updated when released.
 
-Slides: 
+Slides: /workbench/2020-OnlineCFMeetup - APIs - Part 1.pdf
 
 ## Setup
 
@@ -16,7 +16,7 @@ Copy the .env.example file into a .env file, and update the environment variable
 
 Install CommandBox
 
-From the commandbox command line in this folder, type 'box install' to install the dot env and cfconfig system modules.
+From the commandbox command line in this folder, type `box install` to install the dot env and cfconfig system modules.
 
-Next, type 'start' to start the commandbox server
+Next, type `start` to start the commandbox server
 
