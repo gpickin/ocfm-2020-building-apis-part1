@@ -15,7 +15,7 @@ component accessors="true" {
 		return {
 			"error": variables.error ? true : false,
 			"messages": variables.messages,
-			"data": variables.data
+      "data": variables.data,
 		};
     }
 

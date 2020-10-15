@@ -1,13 +1,19 @@
 component {
 
+    function queryToArray( query ){
+        return deserializeJSON( serializeJSON( arguments.query, 'struct' ) );
+    }
+
     /**
 	 * Returns an Array of Rants
 	 */
 	array function list(){
-		return queryExecute(
-            "SELECT * FROM `rants` ORDER BY `createdDate` DESC",
-            [],
-            { returntype = "array" }
+		return queryToArray( 
+            queryExecute(
+                "SELECT * FROM `rants` ORDER BY `createdDate` DESC",
+                [],
+                { }
+            )
         )
     }
     
@@ -15,10 +21,12 @@ component {
 	 * Returns an Array of Rantss
 	 */
 	array function listByUserID( required userID ){
-		return queryExecute(
-            "SELECT * FROM `rants` where userID = ? ORDER BY `createdDate` DESC",
-            [ arguments.userID ],
-            { returntype = "array" }
+		return queryToArray( 
+            queryExecute(
+                "SELECT * FROM `rants` where userID = ? ORDER BY `createdDate` DESC",
+                [ arguments.userID ],
+                {  }
+            )
         )
     }
     

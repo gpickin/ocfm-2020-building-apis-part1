@@ -13,4 +13,22 @@ component {
                 .get();
     }
 
+
+
+
+
+
+
+
+
+
+
+
+    function handleException( exception ){
+        var response = new response();
+        return response.setStatusCode( 404 )
+                .setErrorMessage( exception.message )
+                .get();
+    }
+
 }
