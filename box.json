@@ -1,0 +1,11 @@
+{ 
+    "name":"Building APIs - Part 1",
+    "version":"1.0.0",
+    "location":"",
+    "author":"Gavin Pickin",
+    "devDependencies":{
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*"
+    },
+    "dependencies":{}
+}
